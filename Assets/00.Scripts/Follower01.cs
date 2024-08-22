@@ -20,4 +20,9 @@ public class Follower01 : MonoBehaviour
         //        targets[i].SetPositionAndRotation(transform.position, transform.rotation);
         //    }
     }
+    private void OnDrawGizmos()
+    {
+        if (target is not null)
+            target.SetPositionAndRotation(transform.position, transform.rotation);
+    }
 }
