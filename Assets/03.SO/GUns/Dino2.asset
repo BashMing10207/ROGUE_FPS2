@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afd8a1986b9628a4baccf2b1f8d65f62, type: 3}
+  m_Name: Dino2
+  m_EditorClassIdentifier: 
+  ID: 5
+  projectileType: 0
+  isMulti: 0
+  isAnimEvent: 0
+  multi: 8
+  ammo: 25
+  damage: 1
+  random: 5
+  gunAnime: {fileID: 22100000, guid: 73c6f60ec86e9db43adf1f34202b7a2c, type: 2}
