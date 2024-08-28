@@ -71,7 +71,6 @@ public class MoveMIng : MonoBehaviour
                 _moveVector = (_InputVector - (ming / (maxspeed * airMax * speedMulti))) * speed * airSpeed;
                 _moveVector += Vector3.up * -gravity;
                 //_moveVector = transform.TransformDirection(new Vector3(Input.GetAxis("Horizontal") - ming.x / 2/maxspeed, 0, Input.GetAxis("Vertical") - ming.z/2/maxspeed)).normalized * speed;
-
             }
 
         }

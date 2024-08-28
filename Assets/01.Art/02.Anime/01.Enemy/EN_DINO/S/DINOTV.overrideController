@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DINOTV
+  m_Controller: {fileID: 9100000, guid: 797e20fbe9c6e8541a4eb4dd01378e31, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 26aa602edc540064382cd058ca71c04b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 39fcbe4a4738b654f984343702662466, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 062de95705e7111409e38f9ccfbf9b49, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7c240185f51fe5542a69b78f0609f065, type: 2}

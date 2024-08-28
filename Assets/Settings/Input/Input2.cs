@@ -62,13 +62,58 @@ public partial class @Input2: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Movement"",
+                    ""type"": ""Value"",
+                    ""id"": ""bd77c6db-d1cf-4f1b-a630-6bf51de05df2"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MouseX"",
+                    ""type"": ""Value"",
+                    ""id"": ""f9caea3a-21a6-4de1-944c-b0cebe9c4c8f"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MouseY"",
+                    ""type"": ""Value"",
+                    ""id"": ""cd9e0b04-83be-4879-9166-cf94b02ca855"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Sliding"",
+                    ""type"": ""Button"",
+                    ""id"": ""699467e6-bc90-4ecf-a1eb-aae06cbe00ca"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""cdf25efa-e82f-4fb9-82e1-3ba4024a413c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
                     ""id"": ""5dccd5bd-cbe3-4234-ad65-370b3db87a3b"",
-                    ""path"": ""<Keyboard>/tab"",
+                    ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -77,15 +122,59 @@ public partial class @Input2: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""fcbf5573-03eb-493c-8314-6e761375ce54"",
-                    ""path"": ""<Mouse>/position"",
+                    ""name"": ""2D Vector"",
+                    ""id"": ""00d3c72b-e4af-47f7-bf55-dabd34969a69"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MousePos"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Up"",
+                    ""id"": ""593f0b52-2f5e-4221-b6d5-c29f22ce5be4"",
+                    ""path"": ""<Mouse>/delta/up"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""MousePos"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": false
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Down"",
+                    ""id"": ""176eb322-b263-4fdb-b112-be9691005279"",
+                    ""path"": ""<Mouse>/delta/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MousePos"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Left"",
+                    ""id"": ""e2769ea0-0f7b-417b-b5b2-606cc43af18e"",
+                    ""path"": ""<Mouse>/delta/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MousePos"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Right"",
+                    ""id"": ""dd570982-0312-4061-b37a-93d1b9eae8f8"",
+                    ""path"": ""<Mouse>/delta/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MousePos"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 },
                 {
                     ""name"": """",
@@ -163,6 +252,116 @@ public partial class @Input2: IInputActionCollection2, IDisposable
                     ""action"": ""Swap"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""58316300-2f64-423f-b758-de80b851ffa2"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Mov"",
+                    ""id"": ""44b05f0f-c9ea-4eb5-ab30-7402a5366318"",
+                    ""path"": ""2DVector(mode=1)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""7b42a2f0-0ce8-4a8c-ab29-f876e549464a"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""b4921736-8f75-4376-a230-d1d72cfaaeac"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""9c0a6e68-8221-4809-9d6d-da501887030f"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""d1e15e73-9dfe-4f2d-8c61-285456dd2a39"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4613630b-3cba-4b96-b089-47b5929dc27d"",
+                    ""path"": ""<Mouse>/delta/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseX"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9583a941-5118-4fe8-8210-819b40194f1c"",
+                    ""path"": ""<Mouse>/delta/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseY"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""de04513e-9147-4428-be3f-a40c27ecedc4"",
+                    ""path"": ""<Keyboard>/ctrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sliding"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d5670cff-22d4-4bc8-8e95-2956d9833989"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -203,6 +402,11 @@ public partial class @Input2: IInputActionCollection2, IDisposable
         m_Actions_MousePos = m_Actions.FindAction("MousePos", throwIfNotFound: true);
         m_Actions_MouseButton = m_Actions.FindAction("MouseButton", throwIfNotFound: true);
         m_Actions_Swap = m_Actions.FindAction("Swap", throwIfNotFound: true);
+        m_Actions_Movement = m_Actions.FindAction("Movement", throwIfNotFound: true);
+        m_Actions_MouseX = m_Actions.FindAction("MouseX", throwIfNotFound: true);
+        m_Actions_MouseY = m_Actions.FindAction("MouseY", throwIfNotFound: true);
+        m_Actions_Sliding = m_Actions.FindAction("Sliding", throwIfNotFound: true);
+        m_Actions_Jump = m_Actions.FindAction("Jump", throwIfNotFound: true);
         // Utils
         m_Utils = asset.FindActionMap("Utils", throwIfNotFound: true);
         m_Utils_Esc = m_Utils.FindAction("Esc", throwIfNotFound: true);
@@ -271,6 +475,11 @@ public partial class @Input2: IInputActionCollection2, IDisposable
     private readonly InputAction m_Actions_MousePos;
     private readonly InputAction m_Actions_MouseButton;
     private readonly InputAction m_Actions_Swap;
+    private readonly InputAction m_Actions_Movement;
+    private readonly InputAction m_Actions_MouseX;
+    private readonly InputAction m_Actions_MouseY;
+    private readonly InputAction m_Actions_Sliding;
+    private readonly InputAction m_Actions_Jump;
     public struct ActionsActions
     {
         private @Input2 m_Wrapper;
@@ -279,6 +488,11 @@ public partial class @Input2: IInputActionCollection2, IDisposable
         public InputAction @MousePos => m_Wrapper.m_Actions_MousePos;
         public InputAction @MouseButton => m_Wrapper.m_Actions_MouseButton;
         public InputAction @Swap => m_Wrapper.m_Actions_Swap;
+        public InputAction @Movement => m_Wrapper.m_Actions_Movement;
+        public InputAction @MouseX => m_Wrapper.m_Actions_MouseX;
+        public InputAction @MouseY => m_Wrapper.m_Actions_MouseY;
+        public InputAction @Sliding => m_Wrapper.m_Actions_Sliding;
+        public InputAction @Jump => m_Wrapper.m_Actions_Jump;
         public InputActionMap Get() { return m_Wrapper.m_Actions; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -300,6 +514,21 @@ public partial class @Input2: IInputActionCollection2, IDisposable
             @Swap.started += instance.OnSwap;
             @Swap.performed += instance.OnSwap;
             @Swap.canceled += instance.OnSwap;
+            @Movement.started += instance.OnMovement;
+            @Movement.performed += instance.OnMovement;
+            @Movement.canceled += instance.OnMovement;
+            @MouseX.started += instance.OnMouseX;
+            @MouseX.performed += instance.OnMouseX;
+            @MouseX.canceled += instance.OnMouseX;
+            @MouseY.started += instance.OnMouseY;
+            @MouseY.performed += instance.OnMouseY;
+            @MouseY.canceled += instance.OnMouseY;
+            @Sliding.started += instance.OnSliding;
+            @Sliding.performed += instance.OnSliding;
+            @Sliding.canceled += instance.OnSliding;
+            @Jump.started += instance.OnJump;
+            @Jump.performed += instance.OnJump;
+            @Jump.canceled += instance.OnJump;
         }
 
         private void UnregisterCallbacks(IActionsActions instance)
@@ -316,6 +545,21 @@ public partial class @Input2: IInputActionCollection2, IDisposable
             @Swap.started -= instance.OnSwap;
             @Swap.performed -= instance.OnSwap;
             @Swap.canceled -= instance.OnSwap;
+            @Movement.started -= instance.OnMovement;
+            @Movement.performed -= instance.OnMovement;
+            @Movement.canceled -= instance.OnMovement;
+            @MouseX.started -= instance.OnMouseX;
+            @MouseX.performed -= instance.OnMouseX;
+            @MouseX.canceled -= instance.OnMouseX;
+            @MouseY.started -= instance.OnMouseY;
+            @MouseY.performed -= instance.OnMouseY;
+            @MouseY.canceled -= instance.OnMouseY;
+            @Sliding.started -= instance.OnSliding;
+            @Sliding.performed -= instance.OnSliding;
+            @Sliding.canceled -= instance.OnSliding;
+            @Jump.started -= instance.OnJump;
+            @Jump.performed -= instance.OnJump;
+            @Jump.canceled -= instance.OnJump;
         }
 
         public void RemoveCallbacks(IActionsActions instance)
@@ -385,6 +629,11 @@ public partial class @Input2: IInputActionCollection2, IDisposable
         void OnMousePos(InputAction.CallbackContext context);
         void OnMouseButton(InputAction.CallbackContext context);
         void OnSwap(InputAction.CallbackContext context);
+        void OnMovement(InputAction.CallbackContext context);
+        void OnMouseX(InputAction.CallbackContext context);
+        void OnMouseY(InputAction.CallbackContext context);
+        void OnSliding(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
     }
     public interface IUtilsActions
     {
