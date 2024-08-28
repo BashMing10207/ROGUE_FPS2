@@ -4,31 +4,28 @@ using UnityEngine;
 
 public enum ProjectileType
 {
-    s_Bullet,
-    m_Bullet,
-    l_Bullet,
-    Bullet,
-    lazer,
-    bigBeam,
-    bomb,
-    EnemyBall1,
-    EnemyBall2,
-    Right,
-    Left,
-    Botton,
-    Up,
+    VerySmallBullet,
+    SmallBullet,
+    MiddleBullet,
+    BigBullet,
+    Blade1,
+    Blade2,
+    SmallRocket,
+    BigRocket,
+    Beam,
+    BeamGunBeam,
     last
 }
 
-public class Pool : MonoBehaviour
+public class Pool : MonoSingleton<Pool>
 {
     public Dictionary<ProjectileType,Stack<GameObject>> poolMing = new Dictionary<ProjectileType, Stack<GameObject>> ();
 
     public GameObject[] poolPrefs = new GameObject[(int)ProjectileType.last];
 
-    private void OnEnable()
+    private void Init()
     {
-        GameMana.instance.pool = this;
+        //GameMana.instance.pool = this;
     }
 
     public void Get(ProjectileType prjtype,GameObject target)
@@ -45,15 +42,7 @@ public class Pool : MonoBehaviour
 
         if (!poolMing[prjtype].TryPeek(out gameObject))
         { 
-            if(prjtype >= ProjectileType.Right)
-            {
-                gameObject = Instantiate(poolPrefs[(int)prjtype], targetTr.position, targetTr.rotation, targetTr.root);
-            }
-            else
-            {
-                gameObject = Instantiate(poolPrefs[(int)prjtype], transform.position, transform.rotation, transform);
-            }
-
+            gameObject = Instantiate(poolPrefs[(int)prjtype], transform.position, transform.rotation, transform); 
         }
         else
         {
